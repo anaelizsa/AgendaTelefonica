@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Agenda agenda = new Agenda(10); // Capacidad máxima: 10 contactos
+        Agenda agenda = new Agenda(10); 
 
         while (true) {
             System.out.println("\n=== AGENDA TELEFÓNICA ===");
@@ -58,12 +58,12 @@ public class Main {
                     }
                     default:
                         System.out.println("❌ Opción no válida");
-                } // ← No debe haber break aquí
+                } 
             } catch (NumberFormatException e) {
                 System.out.println("❌ Error: Ingrese un número del 1 al 6");
             } catch (IllegalArgumentException e) {
                 System.out.println("❌ Error: " + e.getMessage());
             }
-        } // Fin del while
+        } 
     }
 }
